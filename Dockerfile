@@ -2,7 +2,7 @@ FROM arizonatribe/centossupervisor
 MAINTAINER David Nunez <arizonatribe@gmail.com>
 
 # Default locations for Node Version Manager and version of Node to be installed
-ENV NODE_VERSION 6.2.0
+ENV NODE_VERSION 6.6.0
 ENV NVM_DIR /.nvm
      
 # Default version of Node to be installed; can be overridden
