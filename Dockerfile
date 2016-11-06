@@ -5,6 +5,7 @@ MAINTAINER David Nunez <arizonatribe@gmail.com>
 ENV NODE_VERSION 6.9.0
 ENV NVM_DIR /.nvm
 ENV PATH $NVM_DIR/v$NODE_VERSION/bin:$PATH
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
      
 # Default version of Node to be installed; can be overridden
 RUN git clone https://github.com/creationix/nvm.git $NVM_DIR
