@@ -2,8 +2,9 @@ FROM arizonatribe/centossupervisor
 MAINTAINER David Nunez <arizonatribe@gmail.com>
 
 # Default locations for Node Version Manager and version of Node to be installed
-ENV NODE_VERSION 6.6.0
+ENV NODE_VERSION 6.9.0
 ENV NVM_DIR /.nvm
+ENV PATH $NVM_DIR/v$NODE_VERSION/bin:$PATH
      
 # Default version of Node to be installed; can be overridden
 RUN git clone https://github.com/creationix/nvm.git $NVM_DIR
